@@ -1,0 +1,14 @@
+.my-plot-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.plot {
+    border-radius: 10px;
+    box-shadow: rgba(100, 100, 111, 0.3) 0px 7px 29px 0px;
+    height: 50vh;
+    min-height: 500px;
+    overflow: hidden;
+    width: 50%;
+}

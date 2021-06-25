@@ -1,0 +1,8 @@
+.navigation {
+    align-items: center;
+    background: #e2e3e3;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}

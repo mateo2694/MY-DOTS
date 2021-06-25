@@ -1,0 +1,25 @@
+.footer {
+    align-items: center;
+    background: #092332;
+    display: flex;
+    height: 100px;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.footer__list {
+    list-style: none;
+}
+
+.footer__item {
+    border-bottom: 2px solid #092332;
+    cursor: pointer;
+    display: inline;
+    font-size: 16px;
+    margin: 0px 30px;
+    transition: all 200ms;
+}
+
+.footer__item:hover {
+    border-bottom-color: #dddb00;
+}
