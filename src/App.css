@@ -31,3 +31,28 @@
 .App {
   min-height: 100vh;
 }
+
+/* Media queries */
+
+@media (min-width: 451px) and (max-width: 760px) {
+  .lateral-padding {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+}
+
+@media (max-width: 450px) {
+  .text--normal {
+    font-size: 16px;
+  }
+  .text--emphasis {
+    font-size: 16px;
+  }
+  .text--highlight {
+    font-size: 16px;
+  }
+  .lateral-padding {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}

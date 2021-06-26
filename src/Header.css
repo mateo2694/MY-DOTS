@@ -30,7 +30,7 @@
     cursor: pointer;
     display: inline;
     margin: 0px 30px;
-    transition: all 200ms;
+    transition: border-bottom-color 200ms;
 }
 
 .header__item:hover {
@@ -40,6 +40,7 @@
 .header__user {
     box-sizing: content-box;
     cursor: pointer;
+    display: inline-block;
     position: relative;
 }
 
@@ -70,4 +71,112 @@
     top: 50px;
     visibility: hidden;
     width: 150px;
+}
+
+.header__hamburger {
+    border-radius: 4px;
+    cursor: pointer;
+    display: none;
+    margin-left: 10px;
+    padding: 4px 8px;
+    transition: background-color 100ms;
+}
+
+.hamburger--active {
+    background-color: #067173;
+}
+
+.hamburger__slice {
+    background-color: white;
+    border-radius: 2px;
+    height: 3px;
+    margin: 5px 0px;
+    width: 25px;
+}
+
+.header__list--mobile {
+    background-color: #067173;
+    cursor: pointer;
+    display: none;
+    list-style: none;
+    overflow: hidden;
+    text-align: center;
+}
+
+.header__item--mobile {
+    font-size: 16px;
+    padding: 10px 0px;
+    transition: background-color 100ms;
+}
+
+.header__item--mobile:hover {
+    background-color: #067e80;
+}
+
+/* Animations */
+
+.expand-animation {
+    animation: expand 500ms ease-in-out both;
+}
+
+@keyframes expand {
+    0% {
+        height: 0px;
+    }
+    100% {
+        height: 39px;
+    }
+}
+
+.contract-animation {
+    animation: contract 500ms ease-in-out both;
+}
+
+@keyframes contract {
+    0% {
+        height: 39px;
+    }
+    100% {
+        height: 0px;
+    }
+}
+
+/* Media queries */
+
+@media (max-width: 650px) {
+    .header__logo {
+        height: 40px;
+    }
+    .header__title {
+        bottom: 10px;
+        font-size: 24px;
+        padding-left: 10px;
+    }
+    .header__list {
+        display: none;
+    }
+    .user__picture {
+        height: 30px;
+        margin-bottom: 4px;
+    }
+    .user__arrow {
+        display: none;
+    }
+    .header__hamburger {
+        display: inline-block;
+    }
+    .header__list--mobile {
+        display: block;
+    }
+}
+
+@media (max-width: 450px) {
+    .header__logo {
+        display: none;
+    }
+    .header__title {
+        bottom: 0px;
+        font-size: 20px;
+        padding-left: 0px;
+    }
 }
